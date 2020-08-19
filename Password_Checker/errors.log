@@ -1,28 +1,4 @@
 <?xml version="1.0" encoding="windows-1252" standalone="no"?>
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
-<record>
-  <date>2020-08-10T13:59:33</date>
-  <millis>1597060773836</millis>
-  <sequence>0</sequence>
-  <logger>com.Umuzi.projects.PasswordChecker</logger>
-  <level>INFO</level>
-  <class>com.Umuzi.projects.PasswordChecker</class>
-  <method>main</method>
-  <thread>1</thread>
-  <message>NoLowerCaseException has occurred</message>
-  <exception>
-    <message>com.Umuzi.projects.NoLowerCaseException</message>
-    <frame>
-      <class>com.Umuzi.projects.PasswordChecker</class>
-      <method>passwordIsValid</method>
-      <line>26</line>
-    </frame>
-    <frame>
-      <class>com.Umuzi.projects.PasswordChecker</class>
-      <method>main</method>
-      <line>60</line>
-    </frame>
-  </exception>
-</record>
 </log>

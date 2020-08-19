@@ -1,3 +1,10 @@
+/**
+ * author: Sifiso Mhlongo
+ * Description: PasswordChecker class checks against 6 conditions 
+ * 
+ * */
+
+
 package com.Umuzi.projects;
 
 
@@ -7,6 +14,7 @@ import java.util.logging.Logger;
 
 public class PasswordChecker {
 	final static Logger classLogger = Logger.getLogger(PasswordChecker.class.getName());
+	//defining regex pattern to check password
     String checkDigits = ".*\\d+.*";
     String checkLowerCase = ".*[a-z]+.*";
     String checkUpperCase = ".*[A-Z]+.*";
@@ -33,6 +41,7 @@ public class PasswordChecker {
 			 * new NoSpecailCharacterException(); }
 			 */
     }
+ 
     public boolean passwordIsOkay(String password){
         byte counter = 0;
         if(!password.isEmpty()) {counter++;}
@@ -50,8 +59,8 @@ public class PasswordChecker {
     }
 
     public static void main(String[] args)throws Exception {
-    	//Handler fileHander;
-        String password = "QWERTYU@67890";
+    	
+        String password = "QWEdfgRTYU@67890";
         PasswordChecker example = new PasswordChecker();
         try{
         	FileHandler fileHandler = new FileHandler(".\\errors.log");
